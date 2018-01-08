@@ -1,7 +1,7 @@
 // landing page design
 @font-face {
-  font-family: FuturaBook;
-  src: url('../fonts/Futura-Bk-BT-Book.ttf') format('ttf');
+  font-family: 'FuturaBook';
+  src: url('../fonts/Futura-Bk-BT-Book.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -11,9 +11,12 @@ $aetm-pink: #F46F7C;
 $aetm-blue: #259CC2;
 $aetm-white: #FFF;
 
-body {
-  font-family: FuturaBook, Arial;
+body, h1, h2 {
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
+}
+
+body {
   box-shadow:0 0 0 22px $aetm-gold inset;
 }
 
@@ -50,6 +53,7 @@ h2 {
   color: $aetm-pink;
 
   p {
+    line-height: 24px;
     font-size: 20px;
     margin-bottom: 0;
   }
