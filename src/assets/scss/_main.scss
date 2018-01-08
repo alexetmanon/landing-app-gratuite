@@ -130,3 +130,25 @@ h2 {
     margin-bottom: 0;
   }
 }
+
+.aetm-top-logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: #FFFFFF;
+  box-shadow: 2px 3px 8px rgba(21,93,114,0.2);
+
+  left: 50%;
+  transform: translateX(-50%);
+  @include breakpoint(medium) {
+    left: auto;
+    transform: none;
+    right: 100px;
+  }
+
+  img {
+    width: 67px;
+    height: 68px;
+    margin: 15px;
+  }
+}
