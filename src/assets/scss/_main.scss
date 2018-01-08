@@ -39,7 +39,11 @@ h2 {
 
 .container-padding {
   min-height: 100vh;
-  padding: 90px 80px 30px;
+
+  padding: 100px 30px 30px 30px;
+  @include breakpoint(medium) {
+    padding: 90px 80px 30px 80px;
+  }
 }
 
 .header {
