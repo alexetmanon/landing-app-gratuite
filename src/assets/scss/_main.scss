@@ -1,0 +1,128 @@
+// landing page design
+@font-face {
+  font-family: FuturaBook;
+  src: url('../fonts/Futura-Bk-BT-Book.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$aetm-gold: #FFDD5E;
+$aetm-pink: #F46F7C;
+$aetm-blue: #259CC2;
+$aetm-white: #FFF;
+
+body {
+  font-family: FuturaBook, Arial;
+  font-weight: 400;
+  box-shadow:0 0 0 22px $aetm-gold inset;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+h2 {
+  line-height: 29px;
+  font-size: 24px;
+}
+
+.max-w-500 {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.container-padding {
+  min-height: 100vh;
+  padding: 90px 80px 30px;
+}
+
+.header {
+  color: $aetm-pink;
+
+  p {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.countdown-content {
+  color: $aetm-blue;
+
+  .countdown-number {
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 700;
+  }
+
+  .countdown-text {
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 24px;
+  }
+}
+
+.form-description {
+  color: $aetm-pink;
+
+  p {
+    line-height: 19px;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.form-content {
+  label {
+    color: #7F7F7F;
+    margin-bottom: 5px;
+  }
+
+  input.text {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFDD5E;
+    background-color: #FFFFFF;
+    box-shadow: none;
+    color: #F46F7C;
+    font-size: 14px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #F45363;
+    }
+  }
+
+  input.button {
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    border-color: $aetm-gold;
+    background-color: $aetm-pink;
+    color: $aetm-white;
+    border-radius: 2px;
+    margin-bottom: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: #F45363;
+      outline: none;
+    }
+  }
+}
+
+.footer {
+  color: $aetm-blue;
+
+  p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+}
