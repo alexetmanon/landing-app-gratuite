@@ -23,11 +23,12 @@ body {
 h1 {
   font-size: 36px;
   line-height: 43px;
+  margin-bottom: 22px;
 }
 
 h2 {
-  line-height: 29px;
   font-size: 24px;
+  line-height: 29px;
 }
 
 .max-w-500 {
@@ -43,7 +44,7 @@ h2 {
 .container-padding {
   min-height: 100vh;
 
-  padding: 100px 30px 30px 30px;
+  padding: 100px 30px 20px 30px;
   @include breakpoint(medium) {
     padding: 90px 80px 30px 80px;
   }
@@ -53,8 +54,8 @@ h2 {
   color: $aetm-pink;
 
   p {
-    line-height: 24px;
     font-size: 20px;
+    line-height: 24px;
     margin-bottom: 0;
   }
 }
@@ -77,6 +78,11 @@ h2 {
 
 .form-description {
   color: $aetm-pink;
+  margin-top: 10px;
+
+  h2 {
+    margin-bottom: 0;
+  }
 
   p {
     line-height: 19px;
@@ -131,6 +137,7 @@ h2 {
 
   p {
     font-size: 8px;
+    line-height: 10px;
     margin-bottom: 0;
   }
 }
