@@ -12,5 +12,5 @@ import Countdown from './countdown';
 
 // $(document).foundation();
 
-let deadline = new Date('2018-02-15T00:00:00+01:00');
+let deadline = new Date('2018-03-01T00:00:00+01:00');
 new Countdown('countdown', deadline);
