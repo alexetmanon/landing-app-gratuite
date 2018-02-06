@@ -40,6 +40,10 @@ export default class Countdown {
   initializeClock(id, endtime) {
     let clock = document.getElementById(id);
 
+    if (!clock) {
+      return;
+    }
+
     this.daysSpan = clock.querySelector('.countdown-days');
     this.hoursSpan = clock.querySelector('.countdown-hours');
     this.minutesSpan = clock.querySelector('.countdown-minutes');
