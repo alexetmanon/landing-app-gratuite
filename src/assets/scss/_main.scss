@@ -17,13 +17,15 @@ body, h1, h2 {
 }
 
 body {
-  box-shadow:0 0 0 22px $aetm-gold inset;
+  box-shadow:0 0 0 22px $aetm-blue inset;
 }
 
 h1 {
-  font-size: 36px;
-  line-height: 43px;
-  margin-bottom: 22px;
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: 2.1px;
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -44,19 +46,27 @@ h2 {
 .container-padding {
   min-height: 100vh;
 
-  padding: 100px 30px 20px 30px;
+  padding: 0 30px 20px 30px;
   @include breakpoint(medium) {
-    padding: 90px 80px 30px 80px;
+    padding: 0 80px 30px 80px;
   }
 }
 
 .header {
-  color: $aetm-pink;
+  color: $aetm-blue;
 
   p {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 19px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
     margin-bottom: 0;
+
+    strong {
+      font-size: 23px;
+    }
   }
 }
 
@@ -100,10 +110,10 @@ h2 {
   input.text {
     border-style: solid;
     border-width: 3px;
-    border-color: #FFDD5E;
+    border-color: $aetm-gold;
     background-color: #FFFFFF;
     box-shadow: none;
-    color: #F46F7C;
+    color: $aetm-pink;
     font-size: 14px;
 
     &:hover,
